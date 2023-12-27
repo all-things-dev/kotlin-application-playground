@@ -1,6 +1,5 @@
 package dev.all_things.playground.common.i18n
 
-import org.apache.logging.log4j.LogManager
 import org.springframework.context.MessageSource
 import org.springframework.context.i18n.LocaleContextHolder
 import org.springframework.stereotype.Service

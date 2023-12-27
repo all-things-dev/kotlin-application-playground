@@ -9,8 +9,6 @@ import org.springframework.http.HttpStatus
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Response<T : Any>(var code: String, var message: String, result: T? = null, results: List<T>? = null)
 {
-	// public val code = code
-	// public val message = message
 	public var result: T? = null
 	public var results: List<T>? = null
 

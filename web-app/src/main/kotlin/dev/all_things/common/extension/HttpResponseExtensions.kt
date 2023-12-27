@@ -9,7 +9,7 @@ public fun HttpStatus.createResponse(): ResponseEntity<Response<Any>>
 	return ResponseEntity.status(this).body(Response(this))
 }
 
-public fun HttpStatus.createResponse(message:String): ResponseEntity<Response<Any>>
+public fun <T : Any> HttpStatus.createResponse(message: String): ResponseEntity<Response<T>>
 {
 	return ResponseEntity.status(this).body(Response(this, message))
 }
