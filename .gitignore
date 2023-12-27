@@ -8,3 +8,5 @@ dataSources
 *.ipr
 
 # Generated files
+logs
+target
