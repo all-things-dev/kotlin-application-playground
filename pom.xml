@@ -33,11 +33,74 @@
 	<properties>
 
 		<!-- Logging -->
-		<log4j.version>2.22.1</log4j.version>
+		<log4j.version>3.0.0-beta1</log4j.version>
 		<slf4j.version>2.0.9</slf4j.version>
+
+		<!-- Apache commons -->
+		<apache.commons-lang.version>3.14.0</apache.commons-lang.version>
+
+		<!-- Frameworks -->
+		<spring.framework.version>6.1.2</spring.framework.version>
+		<spring.security.version>6.2.1</spring.security.version>
+
+		<!-- Byte code generation -->
+		<byte-buddy.version>1.14.11</byte-buddy.version>
+
+		<!-- Serialization -->
+		<jackson.version>2.16.1</jackson.version>
+
+		<!-- Database -->
+		<postgresql.jdbc.version>42.7.1</postgresql.jdbc.version>
+		<hikaricp.version>5.1.0</hikaricp.version>
+		<flyway.version>10.4.1</flyway.version>
+
+		<!-- Persistence -->
+		<hibernate.version>6.4.1.Final</hibernate.version>
+
+		<!-- Job scheduling -->
+		<quartz.version>2.5.0-rc1</quartz.version>
 
 		<!-- Caching -->
 		<all-things-dev.hazelcast-starter.version>1.0.0</all-things-dev.hazelcast-starter.version>
+
+		<!-- Plugins -->
+		<maven.compiler-plugin.version>3.12.1</maven.compiler-plugin.version>
+		<maven.surefire-plugin.version>3.2.1</maven.surefire-plugin.version>
+		<maven.failsafe-plugin.version>3.2.1</maven.failsafe-plugin.version>
+		<maven.resources-plugin.version>3.3.1</maven.resources-plugin.version>
+		<maven.reports-plugin.version>3.5.0</maven.reports-plugin.version>
+		<maven.war-plugin.version>3.4.0</maven.war-plugin.version>
+
+		<!-- Spring Boot overrides -->
+		<log4j2.version>${log4j.version}</log4j2.version>
+		<commons-lang3.version>${apache.commons-lang.version}</commons-lang3.version>
+		<spring-framework.version>${spring.framework.version}</spring-framework.version>
+		<spring-security.version>${spring.security.version}</spring-security.version>
+		<jackson-bom.version>${jackson.version}</jackson-bom.version>
+		<postgresql.version>${postgresql.jdbc.version}</postgresql.version>
+
+		<jakarta.annotation-api.version>3.0.0-M1</jakarta.annotation-api.version>
+		<jakarta.persistence-api.version>3.2.0-M1</jakarta.persistence-api.version>
+		<jakarta.transaction-api.version>2.0.1</jakarta.transaction-api.version>
+		<jakarta.servlet-api.version>6.1.0-M1</jakarta.servlet-api.version>
+		<jakarta.validation-api.version>3.1.0-M1</jakarta.validation-api.version>
+		<jakarta.websocket-api.version>2.2.0-M1</jakarta.websocket-api.version>
+		<jakarta.websocket-client-api.version>2.2.0-M1</jakarta.websocket-client-api.version>
+
+		<!-- Spring Boot plugin overrides -->
+		<maven-compiler-plugin.version>${maven.compiler-plugin.version}</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>${maven.surefire-plugin.version}</maven-surefire-plugin.version>
+		<maven-failsafe-plugin.version>${maven.failsafe-plugin.version}</maven-failsafe-plugin.version>
+		<maven-resources-plugin.version>${maven.resources-plugin.version}</maven-resources-plugin.version>
+		<maven-war-plugin.version>${maven.war-plugin.version}</maven-war-plugin.version>
+
+		<jakarta-annotation.version>${jakarta.annotation-api.version}</jakarta-annotation.version>
+		<jakarta-persistence.version>${jakarta.persistence-api.version}</jakarta-persistence.version>
+		<jakarta-transaction.version>${jakarta.transaction-api.version}</jakarta-transaction.version>
+		<jakarta-servlet.version>${jakarta.servlet-api.version}</jakarta-servlet.version>
+		<jakarta-validation.version>${jakarta.validation-api.version}</jakarta-validation.version>
+		<jakarta-websocket.version>${jakarta.websocket-api.version}</jakarta-websocket.version>
+		<jakarta-websocket-client.version>${jakarta.websocket-client-api.version}</jakarta-websocket-client.version>
 
 		<!-- Compiler configuration -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
